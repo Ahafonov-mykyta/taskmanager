@@ -1,10 +1,10 @@
 {
-  "name": "task-manager",
+  "name": "task-manager-nick",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "12.11.1"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node src/index.js",
