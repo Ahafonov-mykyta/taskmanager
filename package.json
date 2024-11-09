@@ -7,7 +7,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "npm install -g npm@10.9.0 node src/index.js",
+    "start": "node src/index.js",
     "dev": "env-cmd nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
