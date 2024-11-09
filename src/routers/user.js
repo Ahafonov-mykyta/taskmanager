@@ -19,10 +19,10 @@ const upload = multer({
 });
 
 router.post("/users", async (req, res) => {
-  // const isEmailExist = await User.findOne({ email: req.body.email });
+  const isEmailExist = await User.findOne({ email: req.body.email });
 
-  // if (isEmailExist) return res.status(400).send("Email already exist");
-  // const user = new User(req.body);
+  if (isEmailExist) return res.status(400).send("Email already exist");
+  const user = new User(req.body);
 
   try {
     await user.save();
